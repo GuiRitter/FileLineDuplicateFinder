@@ -19,8 +19,16 @@ public final class FileLineDuplicateFinder {
 
 	private static Map<String, Long> map = new HashMap<>();
 
-	private static boolean byMoreThan1(Map.Entry<String, Long> e) {
+	private static boolean byMoreThan1(Map.Entry<String, Long> e) 
+	{
 		return e.getValue() > 1;
+	}
+
+	private static void treatEntry(Map.Entry<String, Long> entry) 
+	{
+		if (entry.getValue() > 1) {
+			out.println(entry.getValue() + "×\n" + entry.getKey() + "\n");
+		}
 	}
 
 	private static final void treatLine(String line) {
@@ -54,8 +62,6 @@ public final class FileLineDuplicateFinder {
 		Files.readAllLines(inputFile.toPath(), StandardCharsets.ISO_8859_1).stream()
 				.forEach(FileLineDuplicateFinder::treatLine);
 
-		map.entrySet().stream().filter(FileLineDuplicateFinder::byMoreThan1).forEach(e -> {
-			out.println(e.getValue() + " - " + e.getKey());
-		});
+		map.entrySet().stream().filter(FileLineDuplicateFinder::byMoreThan1).forEach(FileLineDuplicateFinder::treatEntry);
 	}
 }
