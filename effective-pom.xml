@@ -8,14 +8,14 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'io.github.guiritter:file-line-duplicate-finder:jar:1.0.0'             -->
+<!-- 'io.github.guiritter:file-line-duplicate-finder:jar:1.0.1'             -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.guiritter</groupId>
   <artifactId>file-line-duplicate-finder</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>File Line Duplicate Finder</name>
   <description />
   <url>https://github.com/GuiRitter/FileLineDuplicateFinder</url>
@@ -78,7 +78,7 @@
       </testResource>
     </testResources>
     <directory>c:\acessório\FileLineDuplicateFinder\target</directory>
-    <finalName>file-line-duplicate-finder-1.0.0</finalName>
+    <finalName>file-line-duplicate-finder-1.0.1</finalName>
     <pluginManagement>
       <plugins>
         <plugin>

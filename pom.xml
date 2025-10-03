@@ -5,7 +5,7 @@
 
 	<groupId>io.github.guiritter</groupId>
 	<artifactId>file-line-duplicate-finder</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>File Line Duplicate Finder</name>

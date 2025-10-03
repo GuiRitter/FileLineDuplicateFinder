@@ -49,7 +49,7 @@ public final class FileLineDuplicateFinder {
 		} else {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setFileSelectionMode(FILES_ONLY);
-			chooser.setDialogTitle("Choose the warthunder.blk file");
+			chooser.setDialogTitle("Choose the text file containing lines");
 			if (chooser.showOpenDialog(null) != APPROVE_OPTION) {
 				return;
 			}
